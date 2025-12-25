@@ -1,124 +1,112 @@
-🌱 Greenhouse Automation using Arduino
+# 🌱 Greenhouse Automation using Arduino
 
-An Arduino-based Greenhouse Automation System developed as part of the ECE-279 course project.
-This project automatically monitors and controls key greenhouse parameters to reduce manual effort and improve plant growth efficiency.
+An **Arduino-based Greenhouse Automation System** developed as part of the **ECE-279 course project**.  
+This system automatically monitors and controls key greenhouse parameters to reduce manual effort and improve plant growth efficiency.
 
-📌 Project Overview
+---
 
-In traditional greenhouses, temperature, humidity, irrigation, and lighting are often managed manually.
+## 📌 Project Overview
+
+In traditional greenhouses, **temperature, humidity, irrigation, and lighting** are often managed manually.  
 This can lead to delays, human errors, and inconsistent growing conditions.
 
-Our system uses sensors and automated control logic to continuously monitor environmental conditions and maintain optimal parameters in real time, ensuring healthier plant growth with minimal human intervention.
+Our **Greenhouse Automation System** uses sensors and automated control logic to continuously monitor environmental conditions and maintain optimal parameters **in real time**, ensuring healthier plant growth with minimal human intervention.
 
-⚙️ Features
-🔍 Automatic Monitoring
+---
 
-🌡️ Temperature
+## ⚙️ Features
 
-💧 Humidity
+### 🔍 Automatic Monitoring
+- 🌡️ Temperature  
+- 💧 Humidity  
+- 🌱 Soil Moisture  
+- 💡 Light Intensity  
 
-🌱 Soil moisture
+### 🔄 Automatic Control
+- Cooling **Fan** for ventilation  
+- **Water Pump** for irrigation  
+- **Grow Lights** for artificial lighting  
 
-💡 Light intensity
+### 🖥️ System Capabilities
+- Live sensor data display on **16×2 LCD**
+- Relay-based safe switching of high-power devices
+- Reduced manual intervention
+- Improved energy efficiency
 
-🔄 Automatic Control
+---
 
-Cooling fan for ventilation
+## 🧰 Components Used
 
-Water pump for irrigation
+| Component | Description |
+|---------|-------------|
+| Arduino Uno R3 | Main controller |
+| DHT22 Sensor | Temperature & humidity measurement |
+| Soil Moisture Sensor | Soil water level detection |
+| LDR | Light intensity sensing |
+| 4-Channel Relay Module | Control high-power devices |
+| DC Fan | Ventilation |
+| Water Pump | Automatic irrigation |
+| LED Grow Lights | Artificial lighting |
+| 16×2 LCD (I2C) | Display sensor data |
+| External 12V Power Supply | Power for actuators |
+| Jumper Wires & Breadboard | Circuit connections |
 
-Grow lights for artificial lighting
+---
 
-🖥️ System Capabilities
+## 🔁 Working Principle
 
-Live sensor data display on 16×2 LCD
+1. Sensors continuously collect data for:
+   - Temperature
+   - Humidity
+   - Soil moisture
+   - Light intensity  
 
-Relay-based safe switching of high-power devices
+2. Arduino compares sensor readings with **predefined threshold values**.
 
-Reduced manual intervention
+3. Based on conditions:
+   - **Fan** turns ON/OFF for temperature & humidity control
+   - **Pump** turns ON/OFF based on soil moisture
+   - **Grow lights** turn ON/OFF based on ambient light
 
-Improved energy efficiency
+4. Live sensor readings and device status are displayed on the **LCD**.
 
-🧰 Components Used
+---
 
-Arduino Uno R3
+## 📊 LCD Display Format
 
-DHT22 Temperature & Humidity Sensor
+- **T** → Temperature (°C)  
+- **H** → Humidity (%)  
+- **S** → Soil moisture value  
+- **F / P / L** → Fan, Pump, Light status (ON/OFF)
 
-Soil Moisture Sensor
+---
 
-LDR (Light Dependent Resistor)
-
-4-Channel Relay Module
-
-DC Fan
-
-Water Pump
-
-LED Grow Lights
-
-16×2 LCD (with I2C module)
-
-External 12V Power Supply
-
-Jumper wires & breadboard
-
-🔁 Working Principle
-
-Sensors continuously collect data for temperature, humidity, soil moisture, and light intensity.
-
-Arduino compares sensor readings with predefined threshold values.
-
-Based on conditions:
-
-Fan turns ON/OFF for temperature & humidity control
-
-Pump turns ON/OFF based on soil moisture
-
-Grow lights turn ON/OFF based on ambient light
-
-Live sensor readings and device status are displayed on the LCD.
-
-📊 LCD Display Format
-
-T: Temperature (°C)
-
-H: Humidity (%)
-
-S: Soil moisture value
-
-F / P / L: Fan, Pump, Light status (ON/OFF)
-
-🧠 Learning Outcomes
+## 🧠 Learning Outcomes
 
 This project provided hands-on experience in:
 
-Embedded systems fundamentals
+- Embedded systems fundamentals  
+- Sensor interfacing with Arduino  
+- Relay-based actuator control  
+- Automation logic implementation  
+- Hardware wiring and debugging  
+- Team-based project collaboration  
 
-Sensor interfacing with Arduino
+---
 
-Relay-based actuator control
+## 🚀 Future Scope
 
-Automation logic implementation
+- 🌐 IoT-based remote monitoring  
+- 📱 Mobile app or web dashboard  
+- ☁️ Cloud-based data logging & analytics  
+- 🔔 SMS / push notification alerts  
+- 🎯 PID-based climate control system  
 
-Hardware wiring and debugging
+---
 
-Team-based project collaboration
+## 👨‍💻 Team Members
 
-🚀 Future Scope
+- **Satyam Kumar**  
+- **Prince Patel**
 
-IoT-based remote monitoring
-
-Mobile app or web dashboard
-
-Cloud-based data logging & analytics
-
-SMS / push notification alerts
-
-PID-based climate control system
-
-👨‍💻 Team Members
-
-Satyam Kumar
-
-Prince Patel
+---
