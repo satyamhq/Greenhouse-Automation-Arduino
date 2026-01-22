@@ -5,7 +5,7 @@ This system automatically monitors and controls key greenhouse parameters to red
 
 ---
 
-<img width="1200" height="400" alt="Untitled design" src="https://github.com/user-attachments/assets/c69dd414-4990-4c2c-9b3b-ce0825b551b6" />
+<img width="1200" height="400" alt="Untitled design (1)" src="https://github.com/user-attachments/assets/3106a90f-ef60-4503-8c1a-4f0f5e1c68d8" />
 
 ---
 
